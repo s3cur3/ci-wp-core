@@ -1,7 +1,7 @@
 <?php
 
-add_action('ci_meta', 'printFavicon');
-function printFavicon() {
+add_action('ci_meta', 'ciPrintFavicon');
+function ciPrintFavicon() {
     $favicon = esc_url(get_option("favicon", ''));
     if($favicon) { ?>
         <link rel="shortcut icon" href="<?php echo $favicon; ?>"/> <?php
