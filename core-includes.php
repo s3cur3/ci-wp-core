@@ -42,7 +42,7 @@ require_once 'content/footer/footer-widgets.php'; // Modifies widgets as needed
 require_once 'theme/theme-updates/theme-update-checker.php';
 $update_checker = new ThemeUpdateChecker(
     'ci-modern-accounting-firm',
-    'http://cisandbox.mystagingwebsite.com/wp-content/themes/brewery-base_version_metadata.json',
+    'http://http://ci-modern-accounting-firm.mystagingwebsite.com/downloads/themes/ci-modern-accounting-firm_version_metadata.json',
     true
 );
 
