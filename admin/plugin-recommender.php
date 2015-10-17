@@ -69,19 +69,19 @@ function ciRegisterRequiredPlugins() {
         array(
             'name'     => 'Staff Custom Post Type Plugin', // The plugin name.
             'slug'     => 'ci-staff-cpt', // The plugin slug (typically the folder name).
-            'source'   => 'http://cisandbox.mystagingwebsite.com/wp-content/plugins/ci-staff-cpt.zip', // The plugin source.
+            'source'   => 'http://ci-modern-accounting-firm.mystagingwebsite.com/downloads/plugins/ci-staff-cpt.zip', // The plugin source.
             'required' => true, // If false, the plugin is only 'recommended' instead of required.
         ),
         array(
             'name'     => 'Practice Areas Custom Post Type Plugin', // The plugin name.
             'slug'     => 'ci-practice-areas-cpt', // The plugin slug (typically the folder name).
-            'source'   => 'http://conversioninsights.net/downloads/plugins/ci-practice-areas-cpt.zip', // The plugin source.
+            'source'   => 'http://ci-modern-accounting-firm.mystagingwebsite.com/downloads/plugins/ci-practice-areas-cpt.zip', // The plugin source.
             'required' => true, // If false, the plugin is only 'recommended' instead of required.
         ),
         array(
             'name'     => 'Slides Custom Post Type Plugin', // The plugin name.
             'slug'     => 'ci-slides-cpt', // The plugin slug (typically the folder name).
-            'source'   => 'http://cisandbox.mystagingwebsite.com/wp-content/plugins/ci-slides-cpt.zip', // The plugin source.
+            'source'   => 'http://ci-modern-accounting-firm.mystagingwebsite.com/downloads/plugins/ci-slides-cpt.zip', // The plugin source.
             'required' => true, // If false, the plugin is only 'recommended' instead of required.
         )
     );
