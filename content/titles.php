@@ -10,6 +10,8 @@ function roots_title() {
     } else {
       return __('Latest Posts', CI_TEXT_DOMAIN);
     }
+  } elseif(is_post_type_archive(CI_STAFF_TYPE)) {
+      return post_type_archive_title('All ', true);
   } elseif (is_archive()) {
     $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
     if ($term) {
