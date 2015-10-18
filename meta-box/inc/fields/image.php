@@ -67,8 +67,8 @@ if ( ! class_exists( 'RWMB_Image_Field' ) )
 		 */
 		static function html( $meta, $field )
 		{
-			$i18n_title = apply_filters( 'rwmb_image_upload_string', _x( 'Upload Images', 'image upload', 'rwmb' ), $field );
-			$i18n_more  = apply_filters( 'rwmb_image_add_string', _x( '+ Add new image', 'image upload', 'rwmb' ), $field );
+			$i18n_title = apply_filters( 'rwmb_image_upload_string', _x( 'Upload Images', 'image upload', 'ci-modern-accounting-firm' ), $field );
+			$i18n_more  = apply_filters( 'rwmb_image_add_string', _x( '+ Add new image', 'image upload', 'ci-modern-accounting-firm' ), $field );
 
 			// Uploaded images
 			$html = self::get_uploaded_images( $meta, $field );
@@ -133,14 +133,14 @@ if ( ! class_exists( 'RWMB_Image_Field' ) )
 		 */
 		static function img_html( $image )
 		{
-			$i18n_delete = apply_filters( 'rwmb_image_delete_string', _x( 'Delete', 'image upload', 'rwmb' ) );
-			$i18n_edit   = apply_filters( 'rwmb_image_edit_string', _x( 'Edit', 'image upload', 'rwmb' ) );
+			$i18n_delete = apply_filters( 'rwmb_image_delete_string', _x( 'Delete', 'image upload', 'ci-modern-accounting-firm' ) );
+			$i18n_edit   = apply_filters( 'rwmb_image_edit_string', _x( 'Edit', 'image upload', 'ci-modern-accounting-firm' ) );
 			$li = '
 				<li id="item_%s">
 					<img src="%s" />
 					<div class="rwmb-image-bar">
 						<a title="%s" class="rwmb-edit-file" href="%s" target="_blank">%s</a> |
-						<a title="%s" class="rwmb-delete-file" href="#" data-attachment_id="%s">×</a>
+						<a title="%s" class="rwmb-delete-file" href="#" data-attachment_id="%s">&times;</a>
 					</div>
 				</li>
 			';

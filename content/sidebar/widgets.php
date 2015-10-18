@@ -5,9 +5,9 @@
 function roots_widgets_init() {
     global $ciSidebars;
     $ciSidebars = array(
-        'sidebar-primary' => "Primary",
-        'sidebar-alt'     => "Alternative sidebar",
-        'sidebar-footer'  => "Footer",
+        'sidebar-primary' => __("Primary", 'ci-modern-accounting-firm'),
+        'sidebar-alt'     => __("Alternative sidebar", 'ci-modern-accounting-firm'),
+        'sidebar-footer'  => __("Footer", 'ci-modern-accounting-firm')
     );
 
     // Sidebars
@@ -19,7 +19,7 @@ function roots_widgets_init() {
     );
 
     foreach( $ciSidebars as $sidebarSlug => $sidebarName ) {
-        $sidebarOptions['name'] = __( $sidebarName, 'ci-modern-accounting-firm' );
+        $sidebarOptions['name'] = $sidebarName;
         $sidebarOptions['id'] = $sidebarSlug;
         register_sidebar( $sidebarOptions );
     }
@@ -155,11 +155,9 @@ if( !class_exists('Roots_Vcard_Widget') ) {
 
         function form( $instance ) {
             foreach( $this->fields as $name => $label ) {
-                ${$name} = isset($instance[$name]) ? esc_attr( $instance[$name] ) : '';
-                ?>
+                ${$name} = isset($instance[$name]) ? esc_attr( $instance[$name] ) : ''; ?>
                 <p>
-                    <label
-                        for="<?php echo esc_attr( $this->get_field_id( $name ) ); ?>"><?php _e( "{$label}:", 'ci-modern-accounting-firm' ); ?></label>
+                    <label for="<?php echo esc_attr( $this->get_field_id( $name ) ); ?>"><?php echo $label . ":"; ?></label>
                     <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( $name ) ); ?>"
                            name="<?php echo esc_attr( $this->get_field_name( $name ) ); ?>" type="text"
                            value="<?php echo ${$name}; ?>">

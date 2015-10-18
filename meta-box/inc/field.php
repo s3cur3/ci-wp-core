@@ -182,7 +182,7 @@ if ( !class_exists( 'RWMB_Field ' ) )
 
 			$button = '';
 			if ( $field['clone'] )
-				$button = '<a href="#" class="rwmb-button button-primary add-clone">' . __( '+', 'rwmb' ) . '</a>';
+				$button = '<a href="#" class="rwmb-button button-primary add-clone">' . __( '+', 'ci-modern-accounting-firm' ) . '</a>';
 
 			$desc = !empty( $field['desc'] ) ? "<p id='{$id}_description' class='description'>{$field['desc']}</p>" : '';
 
@@ -199,7 +199,7 @@ if ( !class_exists( 'RWMB_Field ' ) )
 		 */
 		static function clone_button()
 		{
-			return '<a href="#" class="rwmb-button button remove-clone">' . __( '&#8211;', 'rwmb' ) . '</a>';
+			return '<a href="#" class="rwmb-button button remove-clone">' . __( '&#8211;', 'ci-modern-accounting-firm' ) . '</a>';
 		}
 
 		/**

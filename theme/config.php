@@ -2,6 +2,10 @@
 /**
  * Enable theme features
  */
+add_theme_support( 'title-tag' ); // We support a title tag!
+add_theme_support( 'custom-header' ); // We support images in the header
+add_theme_support( 'custom-background' ); // we support custom page backgrounds
+add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) ); // Allow HTML5 markup in lots of default WP locations
 add_theme_support( 'root-relative-urls' ); // Enable relative URLs
 add_theme_support( 'bootstrap-top-navbar' ); // Enable Bootstrap's top navbar
 add_theme_support( 'bootstrap-gallery' ); // Enable Bootstrap's thumbnails component on [gallery]
