@@ -19,7 +19,7 @@ function roots_widgets_init() {
     );
 
     foreach( $ciSidebars as $sidebarSlug => $sidebarName ) {
-        $sidebarOptions['name'] = __( $sidebarName, CI_TEXT_DOMAIN );
+        $sidebarOptions['name'] = __( $sidebarName, 'ci-modern-accounting-firm' );
         $sidebarOptions['id'] = $sidebarSlug;
         register_sidebar( $sidebarOptions );
     }
@@ -55,10 +55,10 @@ if( !class_exists('Roots_Vcard_Widget') ) {
         );
 
         function __construct() {
-            $widget_ops = array( 'classname' => 'widget_roots_vcard', 'description' => __( 'Use this widget to add your contact information', CI_TEXT_DOMAIN ) );
+            $widget_ops = array( 'classname' => 'widget_roots_vcard', 'description' => __( 'Use this widget to add your contact information', 'ci-modern-accounting-firm' ) );
             parent::__construct(
                 'widget_roots_vcard', // Base ID
-                __( 'Contact Information', CI_TEXT_DOMAIN ), // Name
+                __( 'Contact Information', 'ci-modern-accounting-firm' ), // Name
                 $widget_ops // Args
             );
             $this->alt_option_name = 'widget_roots_vcard';
@@ -88,7 +88,7 @@ if( !class_exists('Roots_Vcard_Widget') ) {
             ob_start();
             extract( $args, EXTR_SKIP );
 
-            $title = apply_filters( 'widget_title', empty($instance['title']) ? __( 'vCard', CI_TEXT_DOMAIN ) : $instance['title'], $instance, $this->id_base );
+            $title = apply_filters( 'widget_title', empty($instance['title']) ? __( 'vCard', 'ci-modern-accounting-firm' ) : $instance['title'], $instance, $this->id_base );
 
             foreach( $this->fields as $name => $label ) {
                 if( !isset($instance[$name]) ) {
@@ -159,7 +159,7 @@ if( !class_exists('Roots_Vcard_Widget') ) {
                 ?>
                 <p>
                     <label
-                        for="<?php echo esc_attr( $this->get_field_id( $name ) ); ?>"><?php _e( "{$label}:", CI_TEXT_DOMAIN ); ?></label>
+                        for="<?php echo esc_attr( $this->get_field_id( $name ) ); ?>"><?php _e( "{$label}:", 'ci-modern-accounting-firm' ); ?></label>
                     <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( $name ) ); ?>"
                            name="<?php echo esc_attr( $this->get_field_name( $name ) ); ?>" type="text"
                            value="<?php echo ${$name}; ?>">

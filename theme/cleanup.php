@@ -198,7 +198,7 @@ function roots_excerpt_length($length) {
 }
 
 function roots_excerpt_more($more) {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', CI_TEXT_DOMAIN) . '</a>';
+  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'ci-modern-accounting-firm') . '</a>';
 }
 add_filter('excerpt_length', 'roots_excerpt_length');
 add_filter('excerpt_more', 'roots_excerpt_more');

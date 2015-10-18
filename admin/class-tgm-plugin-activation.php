@@ -99,7 +99,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		public $domain = CI_TEXT_DOMAIN;
+		public $domain = 'ci-modern-accounting-firm';
 
 		/**
 		 * Default absolute path to folder containing pre-packaged plugin zip files.
@@ -161,10 +161,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			self::$instance =& $this;
 
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', $this->domain ),
-				'menu_title'                      => __( 'Install Plugins', $this->domain ),
-				'installing'                      => __( 'Installing Plugin: %s', $this->domain ),
-				'oops'                            => __( 'Something went wrong.', $this->domain ),
+				'page_title'                      => __( 'Install Required Plugins', 'ci-modern-accounting-firm' ),
+				'menu_title'                      => __( 'Install Plugins', 'ci-modern-accounting-firm' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'ci-modern-accounting-firm' ),
+				'oops'                            => __( 'Something went wrong.', 'ci-modern-accounting-firm' ),
 				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ),
 				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ),
 				'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ),
@@ -175,9 +175,9 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ),
 				'install_link' 					  => _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
 				'activate_link' 				  => _n_noop( 'Activate installed plugin', 'Activate installed plugins' ),
-				'return'                          => __( 'Return to Required Plugins Installer', $this->domain ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', $this->domain ),
-				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', $this->domain ),
+				'return'                          => __( 'Return to Required Plugins Installer', 'ci-modern-accounting-firm' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'ci-modern-accounting-firm' ),
+				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'ci-modern-accounting-firm' ),
 			);
 
 			/** Annouce that the class is ready, and pass the object (for advanced use) */
@@ -379,7 +379,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				<h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 				<?php $plugin_table->prepare_items(); ?>
 
-				<?php if ( isset( $this->message ) ) _e( wp_kses_post( $this->message ), $this->domain ); ?>
+				<?php if ( isset( $this->message ) ) _e( wp_kses_post( $this->message ), 'ci-modern-accounting-firm' ); ?>
 
 				<form id="tgmpa-plugins" action="" method="post">
             		<input type="hidden" name="tgmpa-page" value="<?php echo $this->menu; ?>" />
@@ -494,7 +494,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 					if ( is_wp_error( $activate ) ) {
 						echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
-						echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( 'Return to Required Plugins Installer', $this->domain ) . '</a></p>';
+						echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( 'Return to Required Plugins Installer', 'ci-modern-accounting-firm' ) . '</a></p>';
 						return true; // End it here if there is an error with automatic activation
 					}
 					else {
@@ -506,7 +506,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				$complete = array();
 				foreach ( $this->plugins as $plugin ) {
 					if ( ! is_plugin_active( $plugin['file_path'] ) ) {
-						echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( $this->strings['return'], $this->domain ) . '</a></p>';
+						echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( $this->strings['return'], 'ci-modern-accounting-firm' ) . '</a></p>';
 						$complete[] = $plugin;
 						break;
 					}
@@ -521,7 +521,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 				/** All plugins are active, so we display the complete string and hide the plugin menu */
 				if ( empty( $complete ) ) {
-					echo '<p>' .  sprintf( $this->strings['complete'], '<a href="' . admin_url() . '" title="' . __( 'Return to the Dashboard', $this->domain ) . '">' . __( 'Return to the Dashboard', $this->domain ) . '</a>' ) . '</p>';
+					echo '<p>' .  sprintf( $this->strings['complete'], '<a href="' . admin_url() . '" title="' . __( 'Return to the Dashboard', 'ci-modern-accounting-firm' ) . '">' . __( 'Return to the Dashboard', 'ci-modern-accounting-firm' ) . '</a>' ) . '</p>';
 					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 				}
 
@@ -543,13 +543,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 				if ( is_wp_error( $activate ) ) {
 					echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
-					echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( $this->strings['return'], $this->domain ) . '</a></p>';
+					echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( $this->strings['return'], 'ci-modern-accounting-firm' ) . '</a></p>';
 					return true; // End it here if there is an error with activation
 				}
 				else {
 					/** Make sure message doesn't display again if bulk activation is performed immediately after a single activation */
 					if ( ! isset( $_POST[sanitize_key( 'action' )] ) ) {
-						$msg = sprintf( __( 'The following plugin was activated successfully: %s.', $this->domain ), '<strong>' . $plugin['name'] . '</strong>' );
+						$msg = sprintf( __( 'The following plugin was activated successfully: %s.', 'ci-modern-accounting-firm' ), '<strong>' . $plugin['name'] . '</strong>' );
 						echo '<div id="message" class="updated"><p>' . $msg . '</p></div>';
 					}
 				}
@@ -695,12 +695,12 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						$last_plugin = array_pop( $plugin_groups ); // Pop off last name to prep for readability
 						$imploded    = empty( $plugin_groups ) ? '<em>' . $last_plugin . '</em>' : '<em>' . ( implode( ', ', $plugin_groups ) . '</em> and <em>' . $last_plugin . '</em>' );
 
-						$rendered .= '<p>' . sprintf( translate_nooped_plural( $this->strings[$type], $count, $this->domain ), $imploded, $count ) . '</p>'; // All messages now stored
+						$rendered .= '<p>' . sprintf( translate_nooped_plural( $this->strings[$type], $count, 'ci-modern-accounting-firm' ), $imploded, $count ) . '</p>'; // All messages now stored
 					}
 
 					/** Setup variables to determine if action links are needed */
-					$show_install_link  = $install_link ? '<a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '">' . translate_nooped_plural( $this->strings['install_link'], $install_link_count, $this->domain ) . '</a>' : '';
-					$show_activate_link = $activate_link ? '<a href="' . admin_url( 'plugins.php' ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, $this->domain ) . '</a>'  : '';
+					$show_install_link  = $install_link ? '<a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '">' . translate_nooped_plural( $this->strings['install_link'], $install_link_count, 'ci-modern-accounting-firm' ) . '</a>' : '';
+					$show_activate_link = $activate_link ? '<a href="' . admin_url( 'plugins.php' ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, 'ci-modern-accounting-firm' ) . '</a>'  : '';
 
 					/** Define all of the action links */
 					$action_links = apply_filters(
@@ -708,7 +708,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						array(
 							'install'  => ( current_user_can( 'install_plugins' ) ) ? $show_install_link : '',
 							'activate' => ( current_user_can( 'activate_plugins' ) ) ? $show_activate_link : '',
-							'dismiss'  => '<a class="dismiss-notice" href="' . add_query_arg( 'tgmpa-dismiss', 'dismiss_admin_notices' ) . '" target="_parent">' . __( 'Dismiss this notice', $this->domain ) . '</a>',
+							'dismiss'  => '<a class="dismiss-notice" href="' . add_query_arg( 'tgmpa-dismiss', 'dismiss_admin_notices' ) . '" target="_parent">' . __( 'Dismiss this notice', 'ci-modern-accounting-firm' ) . '</a>',
 						)
 					);
 
