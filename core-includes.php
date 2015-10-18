@@ -3,6 +3,7 @@
 require_once 'theme/constants.php';
 require_once 'utils.php'; // Misc utility functions
 require_once 'meta-box/meta-box.php'; // "Plugin" for page/post meta boxes
+require_once 'theme/theme-updates/theme-update-checker.php'; // load the theme update checker
 
 // PAGE SETUP
 require_once 'theme/init.php'; // Roots initial theme setup and constants
@@ -37,14 +38,6 @@ require_once 'content/footer/credit.php'; // Print credits for the theme
 require_once 'content/footer/disclaimer.php'; // Prints a disclaimer
 require_once 'content/footer/footer-widgets.php'; // Modifies widgets as needed
 
-
-//Initialize the update checker.
-require_once 'theme/theme-updates/theme-update-checker.php';
-$update_checker = new ThemeUpdateChecker(
-    'ci-modern-accounting-firm',
-    'http://http://ci-modern-accounting-firm.mystagingwebsite.com/downloads/themes/ci-modern-accounting-firm_version_metadata.json',
-    true
-);
 
 /** Allow SVG files to be uploaded */
 function ciAllowSVGUploads( $mimes ){
