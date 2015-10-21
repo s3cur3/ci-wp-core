@@ -19,3 +19,6 @@ if( !defined('CI_THUMBNAIL_IMG') ) define("CI_THUMBNAIL_IMG", "ci-thumb");
 
 if( !defined('CI_STYLE_CLEAN') ) define("CI_STYLE_CLEAN", "ci-style-clean");
 if( !defined('CI_STYLE_ROUNDED') ) define("CI_STYLE_ROUNDED", "ci-style-rounded");
+
+if( !defined('CI_DO_DEFERRED_ADMIN_NOTICES_AFTER_KEY') ) define('CI_DO_DEFERRED_ADMIN_NOTICES_AFTER_KEY', 'ci_do_deferred_admin_notices_after');
+
