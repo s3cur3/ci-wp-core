@@ -19,7 +19,7 @@ if ( ! class_exists( 'RWMB_Image_Advanced_Field' ) )
 			wp_enqueue_media();
 			wp_enqueue_script( 'rwmb-image-advanced', RWMB_JS_URL . 'image-advanced.js', array( 'jquery', 'underscore' ), RWMB_VER, true );
 			wp_localize_script( 'rwmb-image-advanced', 'rwmbImageAdvanced', array(
-				'frameTitle' => __( 'Select Images', 'ci-modern-accounting-firm' ),
+				'frameTitle' => __( 'Select Images', 'conversion-insights-shared' ),
 			) );
 		}
 
@@ -67,7 +67,7 @@ if ( ! class_exists( 'RWMB_Image_Advanced_Field' ) )
 		 */
 		static function html( $meta, $field )
 		{
-			$i18n_title = apply_filters( 'rwmb_image_advanced_select_string', _x( 'Select or Upload Images', 'image upload', 'ci-modern-accounting-firm' ), $field );
+			$i18n_title = apply_filters( 'rwmb_image_advanced_select_string', _x( 'Select or Upload Images', 'image upload', 'conversion-insights-shared' ), $field );
 			$attach_nonce = wp_create_nonce( "rwmb-attach-media_{$field['id']}" );
 
 			// Uploaded images
@@ -103,8 +103,8 @@ if ( ! class_exists( 'RWMB_Image_Advanced_Field' ) )
 
 		static function print_templates()
 		{
-			$i18n_delete = apply_filters( 'rwmb_image_delete_string', _x( 'Delete', 'image upload', 'ci-modern-accounting-firm' ) );
-			$i18n_edit   = apply_filters( 'rwmb_image_edit_string', _x( 'Edit', 'image upload', 'ci-modern-accounting-firm' ) );
+			$i18n_delete = apply_filters( 'rwmb_image_delete_string', _x( 'Delete', 'image upload', 'conversion-insights-shared' ) );
+			$i18n_edit   = apply_filters( 'rwmb_image_edit_string', _x( 'Edit', 'image upload', 'conversion-insights-shared' ) );
 			?>
             <script id="tmpl-rwmb-image-advanced" type="text/html">
 				<# _.each( attachments, function( attachment ) { #>

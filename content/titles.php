@@ -8,7 +8,7 @@ function roots_title() {
     if (get_option('page_for_posts', true)) {
       return get_the_title(get_option('page_for_posts', true));
     } else {
-      return __('Latest Posts', 'ci-modern-accounting-firm');
+      return __('Latest Posts', 'conversion-insights-shared');
     }
   } elseif(is_post_type_archive(CI_STAFF_TYPE)) {
       return post_type_archive_title('All ', true);
@@ -19,21 +19,21 @@ function roots_title() {
     } elseif (is_post_type_archive()) {
       return apply_filters('the_title', get_queried_object()->labels->name);
     } elseif (is_day()) {
-      return sprintf(__('Daily Archives: %s', 'ci-modern-accounting-firm'), get_the_date());
+      return sprintf(__('Daily Archives: %s', 'conversion-insights-shared'), get_the_date());
     } elseif (is_month()) {
-      return sprintf(__('Monthly Archives: %s', 'ci-modern-accounting-firm'), get_the_date('F Y'));
+      return sprintf(__('Monthly Archives: %s', 'conversion-insights-shared'), get_the_date('F Y'));
     } elseif (is_year()) {
-      return sprintf(__('Yearly Archives: %s', 'ci-modern-accounting-firm'), get_the_date('Y'));
+      return sprintf(__('Yearly Archives: %s', 'conversion-insights-shared'), get_the_date('Y'));
     } elseif (is_author()) {
       $author = get_queried_object();
-      return sprintf(__('Author Archives: %s', 'ci-modern-accounting-firm'), $author->display_name);
+      return sprintf(__('Author Archives: %s', 'conversion-insights-shared'), $author->display_name);
     } else {
       return single_cat_title('', false);
     }
   } elseif (is_search()) {
-    return sprintf(__('Search Results for %s', 'ci-modern-accounting-firm'), get_search_query());
+    return sprintf(__('Search Results for %s', 'conversion-insights-shared'), get_search_query());
   } elseif (is_404()) {
-    return __('Not Found', 'ci-modern-accounting-firm');
+    return __('Not Found', 'conversion-insights-shared');
   } else {
     return get_the_title();
   }

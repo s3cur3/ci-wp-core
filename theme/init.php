@@ -4,12 +4,12 @@
  */
 function roots_setup() {
     // Make theme available for translation
-    load_theme_textdomain( 'ci-modern-accounting-firm', get_template_directory() . '/lang' );
+    load_theme_textdomain( 'conversion-insights-shared', get_template_directory() . '/lang' );
 
     // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
     register_nav_menus( array(
-                            'primary_navigation' => __( 'Primary Navigation', 'ci-modern-accounting-firm' ),
-                            'landing_navigation' => __( 'Landing Page Navigation', 'ci-modern-accounting-firm' ),
+                            'primary_navigation' => __( 'Primary Navigation', 'conversion-insights-shared' ),
+                            'landing_navigation' => __( 'Landing Page Navigation', 'conversion-insights-shared' ),
                         ) );
 
     // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)

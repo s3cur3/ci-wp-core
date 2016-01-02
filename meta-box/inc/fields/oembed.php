@@ -51,7 +51,7 @@ if ( ! class_exists( 'RWMB_OEmbed_Field' ) )
 		static function get_embed( $url )
 		{
 			$embed = @wp_oembed_get( $url );
-			return $embed ? $embed : __( 'Embed HTML not available.', 'ci-modern-accounting-firm' );
+			return $embed ? $embed : __( 'Embed HTML not available.', 'conversion-insights-shared' );
 		}
 
 		/**
@@ -73,7 +73,7 @@ if ( ! class_exists( 'RWMB_OEmbed_Field' ) )
 				$field['id'],
 				$meta,
 				$field['size'],
-				__( 'Preview', 'ci-modern-accounting-firm' ),
+				__( 'Preview', 'conversion-insights-shared' ),
 				$meta ? self::get_embed( $meta ) : ''
 			);
 		}

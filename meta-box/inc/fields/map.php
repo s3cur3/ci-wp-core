@@ -45,7 +45,7 @@ if ( !class_exists( 'RWMB_Map_Field' ) )
 				$html .= sprintf(
 					'<button class="button rwmb-map-goto-address-button" value="%s">%s</button>',
 					is_array( $address ) ? implode( ',', $address ) : $address,
-					__( 'Find Address', 'ci-modern-accounting-firm' )
+					__( 'Find Address', 'conversion-insights-shared' )
 				);
 			}
 

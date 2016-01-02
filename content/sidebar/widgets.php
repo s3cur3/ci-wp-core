@@ -5,9 +5,9 @@
 function roots_widgets_init() {
     global $ciSidebars;
     $ciSidebars = array(
-        'sidebar-primary' => __("Primary", 'ci-modern-accounting-firm'),
-        'sidebar-alt'     => __("Alternative sidebar", 'ci-modern-accounting-firm'),
-        'sidebar-footer'  => __("Footer", 'ci-modern-accounting-firm')
+        'sidebar-primary' => __("Primary", 'conversion-insights-shared'),
+        'sidebar-alt'     => __("Alternative sidebar", 'conversion-insights-shared'),
+        'sidebar-footer'  => __("Footer", 'conversion-insights-shared')
     );
 
     // Sidebars
@@ -55,10 +55,10 @@ if( !class_exists('Roots_Vcard_Widget') ) {
         );
 
         function __construct() {
-            $widget_ops = array( 'classname' => 'widget_roots_vcard', 'description' => __( 'Use this widget to add your contact information', 'ci-modern-accounting-firm' ) );
+            $widget_ops = array( 'classname' => 'widget_roots_vcard', 'description' => __( 'Use this widget to add your contact information', 'conversion-insights-shared' ) );
             parent::__construct(
                 'widget_roots_vcard', // Base ID
-                __( 'Contact Information', 'ci-modern-accounting-firm' ), // Name
+                __( 'Contact Information', 'conversion-insights-shared' ), // Name
                 $widget_ops // Args
             );
             $this->alt_option_name = 'widget_roots_vcard';
@@ -88,7 +88,7 @@ if( !class_exists('Roots_Vcard_Widget') ) {
             ob_start();
             extract( $args, EXTR_SKIP );
 
-            $title = apply_filters( 'widget_title', empty($instance['title']) ? __( 'vCard', 'ci-modern-accounting-firm' ) : $instance['title'], $instance, $this->id_base );
+            $title = apply_filters( 'widget_title', empty($instance['title']) ? __( 'vCard', 'conversion-insights-shared' ) : $instance['title'], $instance, $this->id_base );
 
             foreach( $this->fields as $name => $label ) {
                 if( !isset($instance[$name]) ) {

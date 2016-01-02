@@ -14,7 +14,7 @@ if ( !class_exists( 'RWMB_File_Input_Field' ) )
 			wp_enqueue_media();
 			wp_enqueue_script( 'rwmb-file-input', RWMB_JS_URL . 'file-input.js', array( 'jquery' ), RWMB_VER, true );
 			wp_localize_script( 'rwmb-file-input', 'rwmbFileInput', array(
-				'frameTitle' => __( 'Select File', 'ci-modern-accounting-firm' ),
+				'frameTitle' => __( 'Select File', 'conversion-insights-shared' ),
 			) );
 		}
 
@@ -37,9 +37,9 @@ if ( !class_exists( 'RWMB_File_Input_Field' ) )
 				$meta,
 				$field['placeholder'],
 				$field['size'],
-				__( 'Select', 'ci-modern-accounting-firm' ),
+				__( 'Select', 'conversion-insights-shared' ),
 				$meta ? '' : 'hidden',
-				__( 'Remove', 'ci-modern-accounting-firm' )
+				__( 'Remove', 'conversion-insights-shared' )
 			);
 		}
 

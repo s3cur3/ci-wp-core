@@ -99,7 +99,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		public $domain = 'ci-modern-accounting-firm';
+		public $domain = 'conversion-insights-shared';
 
 		/**
 		 * Default absolute path to folder containing pre-packaged plugin zip files.
@@ -161,23 +161,23 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			self::$instance =& $this;
 
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', 'ci-modern-accounting-firm' ),
-				'menu_title'                      => __( 'Install Plugins', 'ci-modern-accounting-firm' ),
-				'installing'                      => __( 'Installing Plugin: %s', 'ci-modern-accounting-firm' ),
-				'oops'                            => __( 'Something went wrong.', 'ci-modern-accounting-firm' ),
-				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'ci-modern-accounting-firm' ),
-				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'ci-modern-accounting-firm' ),
-				'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'ci-modern-accounting-firm' ),
-				'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'ci-modern-accounting-firm' ),
-				'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'ci-modern-accounting-firm' ),
-				'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'ci-modern-accounting-firm' ),
-				'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'ci-modern-accounting-firm' ),
-				'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'ci-modern-accounting-firm' ),
-				'install_link' 					  => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'ci-modern-accounting-firm' ),
-				'activate_link' 				  => _n_noop( 'Activate installed plugin', 'Activate installed plugins', 'ci-modern-accounting-firm' ),
-				'return'                          => __( 'Return to Required Plugins Installer', 'ci-modern-accounting-firm' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'ci-modern-accounting-firm' ),
-				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'ci-modern-accounting-firm' ),
+				'page_title'                      => __( 'Install Required Plugins', 'conversion-insights-shared' ),
+				'menu_title'                      => __( 'Install Plugins', 'conversion-insights-shared' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'conversion-insights-shared' ),
+				'oops'                            => __( 'Something went wrong.', 'conversion-insights-shared' ),
+				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'conversion-insights-shared' ),
+				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'conversion-insights-shared' ),
+				'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'conversion-insights-shared' ),
+				'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'conversion-insights-shared' ),
+				'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'conversion-insights-shared' ),
+				'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'conversion-insights-shared' ),
+				'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'conversion-insights-shared' ),
+				'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'conversion-insights-shared' ),
+				'install_link' 					  => _n_noop( 'Begin installing plugin', 'Begin installing plugins', 'conversion-insights-shared' ),
+				'activate_link' 				  => _n_noop( 'Activate installed plugin', 'Activate installed plugins', 'conversion-insights-shared' ),
+				'return'                          => __( 'Return to Required Plugins Installer', 'conversion-insights-shared' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'conversion-insights-shared' ),
+				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'conversion-insights-shared' ),
 			);
 
 			/** Annouce that the class is ready, and pass the object (for advanced use) */
@@ -494,7 +494,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 					if ( is_wp_error( $activate ) ) {
 						echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
-						echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( 'Return to Required Plugins Installer', 'ci-modern-accounting-firm' ) . '</a></p>';
+						echo '<p><a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . __( 'Return to Required Plugins Installer', 'conversion-insights-shared' ) . '</a></p>';
 						return true; // End it here if there is an error with automatic activation
 					}
 					else {
@@ -521,7 +521,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 				/** All plugins are active, so we display the complete string and hide the plugin menu */
 				if ( empty( $complete ) ) {
-					echo '<p>' .  sprintf( $this->strings['complete'], '<a href="' . admin_url() . '" title="' . __( 'Return to the Dashboard', 'ci-modern-accounting-firm' ) . '">' . __( 'Return to the Dashboard', 'ci-modern-accounting-firm' ) . '</a>' ) . '</p>';
+					echo '<p>' .  sprintf( $this->strings['complete'], '<a href="' . admin_url() . '" title="' . __( 'Return to the Dashboard', 'conversion-insights-shared' ) . '">' . __( 'Return to the Dashboard', 'conversion-insights-shared' ) . '</a>' ) . '</p>';
 					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 				}
 
@@ -549,7 +549,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				else {
 					/** Make sure message doesn't display again if bulk activation is performed immediately after a single activation */
 					if ( ! isset( $_POST[sanitize_key( 'action' )] ) ) {
-						$msg = sprintf( __( 'The following plugin was activated successfully: %s.', 'ci-modern-accounting-firm' ), '<strong>' . $plugin['name'] . '</strong>' );
+						$msg = sprintf( __( 'The following plugin was activated successfully: %s.', 'conversion-insights-shared' ), '<strong>' . $plugin['name'] . '</strong>' );
 						echo '<div id="message" class="updated"><p>' . $msg . '</p></div>';
 					}
 				}
@@ -695,12 +695,12 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						$last_plugin = array_pop( $plugin_groups ); // Pop off last name to prep for readability
 						$imploded    = empty( $plugin_groups ) ? '<em>' . $last_plugin . '</em>' : '<em>' . ( implode( ', ', $plugin_groups ) . '</em> and <em>' . $last_plugin . '</em>' );
 
-						$rendered .= '<p>' . sprintf( translate_nooped_plural( $this->strings[$type], $count, 'ci-modern-accounting-firm' ), $imploded, $count ) . '</p>'; // All messages now stored
+						$rendered .= '<p>' . sprintf( translate_nooped_plural( $this->strings[$type], $count, 'conversion-insights-shared' ), $imploded, $count ) . '</p>'; // All messages now stored
 					}
 
 					/** Setup variables to determine if action links are needed */
-					$show_install_link  = $install_link ? '<a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '">' . translate_nooped_plural( $this->strings['install_link'], $install_link_count, 'ci-modern-accounting-firm' ) . '</a>' : '';
-					$show_activate_link = $activate_link ? '<a href="' . admin_url( 'plugins.php' ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, 'ci-modern-accounting-firm' ) . '</a>'  : '';
+					$show_install_link  = $install_link ? '<a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '">' . translate_nooped_plural( $this->strings['install_link'], $install_link_count, 'conversion-insights-shared' ) . '</a>' : '';
+					$show_activate_link = $activate_link ? '<a href="' . admin_url( 'plugins.php' ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, 'conversion-insights-shared' ) . '</a>'  : '';
 
 					/** Define all of the action links */
 					$action_links = apply_filters(
@@ -708,7 +708,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						array(
 							'install'  => ( current_user_can( 'install_plugins' ) ) ? $show_install_link : '',
 							'activate' => ( current_user_can( 'activate_plugins' ) ) ? $show_activate_link : '',
-							'dismiss'  => '<a class="dismiss-notice" href="' . add_query_arg( 'tgmpa-dismiss', 'dismiss_admin_notices' ) . '" target="_parent">' . __( 'Dismiss this notice', 'ci-modern-accounting-firm' ) . '</a>',
+							'dismiss'  => '<a class="dismiss-notice" href="' . add_query_arg( 'tgmpa-dismiss', 'dismiss_admin_notices' ) . '" target="_parent">' . __( 'Dismiss this notice', 'conversion-insights-shared' ) . '</a>',
 						)
 					);
 
@@ -1095,27 +1095,27 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				if ( isset( $plugin['external_url'] ) ) {
 					/** The plugin is linked to an external source */
-					$table_data[$i]['source'] = __( 'External Link', 'ci-modern-accounting-firm' );
+					$table_data[$i]['source'] = __( 'External Link', 'conversion-insights-shared' );
 				}
 				elseif ( isset( $plugin['source'] ) ) {
 					/** The plugin must be from a private repository */
 					if ( preg_match( '|^http(s)?://|', $plugin['source'] ) )
-						$table_data[$i]['source'] = __( 'Private Repository', 'ci-modern-accounting-firm' );
+						$table_data[$i]['source'] = __( 'Private Repository', 'conversion-insights-shared' );
 					/** The plugin is pre-packaged with the theme */
 					else
-						$table_data[$i]['source'] = __( 'Pre-Packaged', 'ci-modern-accounting-firm' );
+						$table_data[$i]['source'] = __( 'Pre-Packaged', 'conversion-insights-shared' );
 				}
 				/** The plugin is from the WordPress repository */
 				else {
-					$table_data[$i]['source'] = __( 'WordPress Repository', 'ci-modern-accounting-firm' );
+					$table_data[$i]['source'] = __( 'WordPress Repository', 'conversion-insights-shared' );
 				}
 
-				$table_data[$i]['type'] = $plugin['required'] ? __( 'Required', 'ci-modern-accounting-firm' ) : __( 'Recommended', 'ci-modern-accounting-firm' );
+				$table_data[$i]['type'] = $plugin['required'] ? __( 'Required', 'conversion-insights-shared' ) : __( 'Recommended', 'conversion-insights-shared' );
 
 				if ( ! isset( $installed_plugins[$plugin['file_path']] ) )
-					$table_data[$i]['status'] = sprintf( '%1$s', __( 'Not Installed', 'ci-modern-accounting-firm' ) );
+					$table_data[$i]['status'] = sprintf( '%1$s', __( 'Not Installed', 'conversion-insights-shared' ) );
 				elseif ( is_plugin_inactive( $plugin['file_path'] ) )
-					$table_data[$i]['status'] = sprintf( '%1$s', __( 'Installed But Not Activated', 'ci-modern-accounting-firm' ) );
+					$table_data[$i]['status'] = sprintf( '%1$s', __( 'Installed But Not Activated', 'conversion-insights-shared' ) );
 
 				$table_data[$i]['file_path'] = $plugin['file_path'];
 				$table_data[$i]['url'] = isset( $plugin['source'] ) ? $plugin['source'] : 'repo';
@@ -1285,7 +1285,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		public function no_items() {
 
-			printf( __( 'No plugins to install or activate. <a href="%1$s" title="Return to the Dashboard">Return to the Dashboard</a>', 'ci-modern-accounting-firm' ), admin_url() );
+			printf( __( 'No plugins to install or activate. <a href="%1$s" title="Return to the Dashboard">Return to the Dashboard</a>', 'conversion-insights-shared' ), admin_url() );
 			echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 
 		}
@@ -1301,10 +1301,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			$columns = array(
 				'cb'     => '<input type="checkbox" />',
-				'plugin' => __( 'Plugin', 'ci-modern-accounting-firm' ),
-				'source' => __( 'Source', 'ci-modern-accounting-firm' ),
-				'type'   => __( 'Type', 'ci-modern-accounting-firm' ),
-				'status' => __( 'Status', 'ci-modern-accounting-firm' )
+				'plugin' => __( 'Plugin', 'conversion-insights-shared' ),
+				'source' => __( 'Source', 'conversion-insights-shared' ),
+				'type'   => __( 'Type', 'conversion-insights-shared' ),
+				'status' => __( 'Status', 'conversion-insights-shared' )
 			);
 
 			return $columns;
@@ -1322,8 +1322,8 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		public function get_bulk_actions() {
 
 			$actions = array(
-				'tgmpa-bulk-install'  => __( 'Install', 'ci-modern-accounting-firm' ),
-				'tgmpa-bulk-activate' => __( 'Activate', 'ci-modern-accounting-firm' ),
+				'tgmpa-bulk-install'  => __( 'Install', 'conversion-insights-shared' ),
+				'tgmpa-bulk-activate' => __( 'Activate', 'conversion-insights-shared' ),
 			);
 
 			return $actions;
@@ -1547,7 +1547,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				if ( is_wp_error( $activate ) )
 					echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
 				else
-					printf( '<div id="message" class="updated"><p>%1$s %2$s</p></div>', _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'ci-modern-accounting-firm' ), $imploded );
+					printf( '<div id="message" class="updated"><p>%1$s %2$s</p></div>', _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'conversion-insights-shared' ), $imploded );
 
  				/** Update recently activated plugins option */
 				$recent = (array) get_option( 'recently_activated' );
@@ -1832,12 +1832,12 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 	 		 */
 			public function install_strings() {
 
-				$this->strings['no_package']          = __( 'Install package not available.', 'ci-modern-accounting-firm' );
-				$this->strings['downloading_package'] = __( 'Downloading install package from <span class="code">%s</span>&#8230;', 'ci-modern-accounting-firm' );
-				$this->strings['unpack_package']      = __( 'Unpacking the package&#8230;', 'ci-modern-accounting-firm' );
-				$this->strings['installing_package']  = __( 'Installing the plugin&#8230;', 'ci-modern-accounting-firm' );
-				$this->strings['process_failed']      = __( 'Plugin install failed.', 'ci-modern-accounting-firm' );
-				$this->strings['process_success']     = __( 'Plugin installed successfully.', 'ci-modern-accounting-firm' );
+				$this->strings['no_package']          = __( 'Install package not available.', 'conversion-insights-shared' );
+				$this->strings['downloading_package'] = __( 'Downloading install package from <span class="code">%s</span>&#8230;', 'conversion-insights-shared' );
+				$this->strings['unpack_package']      = __( 'Unpacking the package&#8230;', 'conversion-insights-shared' );
+				$this->strings['installing_package']  = __( 'Installing the plugin&#8230;', 'conversion-insights-shared' );
+				$this->strings['process_failed']      = __( 'Plugin install failed.', 'conversion-insights-shared' );
+				$this->strings['process_success']     = __( 'Plugin installed successfully.', 'conversion-insights-shared' );
 
 			}
 
@@ -1848,8 +1848,8 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 	 		 */
 			public function activate_strings() {
 
-				$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'ci-modern-accounting-firm' );
-				$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'ci-modern-accounting-firm' );
+				$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'conversion-insights-shared' );
+				$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'conversion-insights-shared' );
 
 			}
 
@@ -1958,19 +1958,19 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 
 				/** Automatic activation strings */
 				if ( TGM_Plugin_Activation::$instance->is_automatic ) {
-					$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'ci-modern-accounting-firm' );
-					$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'ci-modern-accounting-firm' ) . ' <a onclick="%2$s" href="#" class="hide-if-no-js"><span>' . __( 'Show Details', 'ci-modern-accounting-firm' ) . '</span><span class="hidden">' . __( 'Hide Details', 'ci-modern-accounting-firm' ) . '</span>.</a>';
-					$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations and activations have been completed.', 'ci-modern-accounting-firm' );
-					$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'ci-modern-accounting-firm' );
+					$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'conversion-insights-shared' );
+					$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'conversion-insights-shared' ) . ' <a onclick="%2$s" href="#" class="hide-if-no-js"><span>' . __( 'Show Details', 'conversion-insights-shared' ) . '</span><span class="hidden">' . __( 'Hide Details', 'conversion-insights-shared' ) . '</span>.</a>';
+					$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations and activations have been completed.', 'conversion-insights-shared' );
+					$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'conversion-insights-shared' );
 				}
 				/** Default installation strings */
 				else {
-					$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'ci-modern-accounting-firm' );
-					$this->upgrader->strings['skin_update_failed_error']  = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'ci-modern-accounting-firm' );
-					$this->upgrader->strings['skin_update_failed']        = __( 'The installation of %1$s failed.', 'ci-modern-accounting-firm' );
-					$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed successfully.', 'ci-modern-accounting-firm' ) . ' <a onclick="%2$s" href="#" class="hide-if-no-js"><span>' . __( 'Show Details', 'ci-modern-accounting-firm' ) . '</span><span class="hidden">' . __( 'Hide Details', 'ci-modern-accounting-firm' ) . '</span>.</a>';
-					$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations have been completed.', 'ci-modern-accounting-firm' );
-					$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'ci-modern-accounting-firm' );
+					$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'conversion-insights-shared' );
+					$this->upgrader->strings['skin_update_failed_error']  = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'conversion-insights-shared' );
+					$this->upgrader->strings['skin_update_failed']        = __( 'The installation of %1$s failed.', 'conversion-insights-shared' );
+					$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed successfully.', 'conversion-insights-shared' ) . ' <a onclick="%2$s" href="#" class="hide-if-no-js"><span>' . __( 'Show Details', 'conversion-insights-shared' ) . '</span><span class="hidden">' . __( 'Hide Details', 'conversion-insights-shared' ) . '</span>.</a>';
+					$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations have been completed.', 'conversion-insights-shared' );
+					$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'conversion-insights-shared' );
 				}
 
 			}
@@ -2061,7 +2061,7 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 
 				/** All plugins are active, so we display the complete string and hide the menu to protect users */
 				if ( empty( $complete ) ) {
-					echo '<p>' .  sprintf( TGM_Plugin_Activation::$instance->strings['complete'], '<a href="' . admin_url() . '" title="' . __( 'Return to the Dashboard', 'ci-modern-accounting-firm' ) . '">' . __( 'Return to the Dashboard', 'ci-modern-accounting-firm' ) . '</a>' ) . '</p>';
+					echo '<p>' .  sprintf( TGM_Plugin_Activation::$instance->strings['complete'], '<a href="' . admin_url() . '" title="' . __( 'Return to the Dashboard', 'conversion-insights-shared' ) . '">' . __( 'Return to the Dashboard', 'conversion-insights-shared' ) . '</a>' ) . '</p>';
 					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 				}
 

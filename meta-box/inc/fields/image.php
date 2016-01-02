@@ -67,8 +67,8 @@ if ( ! class_exists( 'RWMB_Image_Field' ) )
 		 */
 		static function html( $meta, $field )
 		{
-			$i18n_title = apply_filters( 'rwmb_image_upload_string', _x( 'Upload Images', 'image upload', 'ci-modern-accounting-firm' ), $field );
-			$i18n_more  = apply_filters( 'rwmb_image_add_string', _x( '+ Add new image', 'image upload', 'ci-modern-accounting-firm' ), $field );
+			$i18n_title = apply_filters( 'rwmb_image_upload_string', _x( 'Upload Images', 'image upload', 'conversion-insights-shared' ), $field );
+			$i18n_more  = apply_filters( 'rwmb_image_add_string', _x( '+ Add new image', 'image upload', 'conversion-insights-shared' ), $field );
 
 			// Uploaded images
 			$html = self::get_uploaded_images( $meta, $field );
@@ -133,8 +133,8 @@ if ( ! class_exists( 'RWMB_Image_Field' ) )
 		 */
 		static function img_html( $image )
 		{
-			$i18n_delete = apply_filters( 'rwmb_image_delete_string', _x( 'Delete', 'image upload', 'ci-modern-accounting-firm' ) );
-			$i18n_edit   = apply_filters( 'rwmb_image_edit_string', _x( 'Edit', 'image upload', 'ci-modern-accounting-firm' ) );
+			$i18n_delete = apply_filters( 'rwmb_image_delete_string', _x( 'Delete', 'image upload', 'conversion-insights-shared' ) );
+			$i18n_edit   = apply_filters( 'rwmb_image_edit_string', _x( 'Edit', 'image upload', 'conversion-insights-shared' ) );
 			$li = '
 				<li id="item_%s">
 					<img src="%s" />
