@@ -34,7 +34,6 @@ require_once 'content/featured-image-attribution/featured-image-attribution.php'
 require_once 'content/enableShortcodes.php'; // Enables shortcode use in places they aren't normally allowed
 
 // FOOTER
-require_once 'content/footer/credit.php'; // Print credits for the theme
 require_once 'content/footer/disclaimer.php'; // Prints a disclaimer
 require_once 'content/footer/footer-widgets.php'; // Modifies widgets as needed
 
