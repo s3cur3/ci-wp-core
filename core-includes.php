@@ -21,6 +21,7 @@ require_once 'content/header/favicon.php'; // Custom favicon
 require_once 'appearance/customCSS.php'; // Add the user's custom CSS to the page <head>
 require_once 'content/header/javascriptVars.php'; // Variables needed by the Javascript
 require_once 'content/header/nav.php'; // Custom nav walker
+require_once 'content/header/logo.php'; // Tool to spit out your logo HTML
 
 // BODY CONTENT
 require_once 'content/header/breadbrumbs.php'; // Breadcrumbs in the page headers
