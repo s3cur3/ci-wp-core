@@ -17,7 +17,7 @@ define( 'RWMB_VER', '4.3.8' );
 
 // Define plugin URLs, for fast enqueuing scripts and styles
 if ( ! defined( 'RWMB_URL' ) )
-	define( 'RWMB_URL', plugin_dir_url( __FILE__ ) );
+	define( 'RWMB_URL', get_template_directory_uri() . "/lib/core/meta-box/" );
 define( 'RWMB_JS_URL', trailingslashit( RWMB_URL . 'js' ) );
 define( 'RWMB_CSS_URL', trailingslashit( RWMB_URL . 'css' ) );
 
