@@ -47,11 +47,6 @@ function ciRegisterRequiredPlugins() {
             'required' => false,
         ),
         array(
-            'name'     => 'WordPress SEO by Yoast',
-            'slug'     => 'wordpress-seo',
-            'required' => false,
-        ),
-        array(
             'name'     => 'Google Maps Widget',
             'slug'     => 'google-maps-widget',
             'required' => false,
@@ -59,11 +54,6 @@ function ciRegisterRequiredPlugins() {
         array(
             'name'     => 'Testimonials Widget',
             'slug'     => 'testimonials-widget',
-            'required' => false,
-        ),
-        array(
-            'name'     => 'Easy Bootstrap Shortcodes',
-            'slug'     => 'easy-bootstrap-shortcodes',
             'required' => false,
         ),
         array(
