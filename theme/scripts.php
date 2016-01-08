@@ -41,8 +41,9 @@ function roots_admin_scripts() {
     // Scripts
     wp_register_script('bootstrap-admin', get_template_directory_uri() . '/assets/js/admin/bootstrap-custom.min.js');
     wp_enqueue_script('bootstrap-admin');
-    wp_register_script('font-selection', get_template_directory_uri() . '/assets/js/admin/fontSelection.js');
-    wp_enqueue_script('font-selection');
+    // This is causing problems with Yoast SEO. We don't *really* need it for now, so let's just disable it.
+    //wp_register_script('font-selection', get_template_directory_uri() . '/assets/js/admin/fontSelection.js');
+    //wp_enqueue_script('font-selection');
 
     // Styles
     wp_register_style('bootstrap-admin', get_template_directory_uri() . '/assets/css/admin/bootstrap-custom.min.css');
