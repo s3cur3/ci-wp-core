@@ -63,9 +63,10 @@ if( !class_exists('Roots_Vcard_Widget') ) {
             );
             $this->alt_option_name = 'widget_roots_vcard';
 
-            add_action( 'save_post', array( &$this, 'flush_widget_cache' ) );
-            add_action( 'deleted_post', array( &$this, 'flush_widget_cache' ) );
-            add_action( 'switch_theme', array( &$this, 'flush_widget_cache' ) );
+            // flush_widget_cache() is now deprecated as of 4.4
+            //add_action( 'save_post', array( &$this, 'flush_widget_cache' ) );
+            //add_action( 'deleted_post', array( &$this, 'flush_widget_cache' ) );
+            //add_action( 'switch_theme', array( &$this, 'flush_widget_cache' ) );
         }
 
         function widget( $args, $instance ) {
@@ -138,7 +139,8 @@ if( !class_exists('Roots_Vcard_Widget') ) {
         function update( $new_instance, $old_instance ) {
             $instance = array_map( 'strip_tags', $new_instance );
 
-            $this->flush_widget_cache();
+            // flush_widget_cache() is now deprecated as of 4.4
+            //$this->flush_widget_cache();
 
             $alloptions = wp_cache_get( 'alloptions', 'options' );
 
@@ -149,9 +151,11 @@ if( !class_exists('Roots_Vcard_Widget') ) {
             return $instance;
         }
 
+        // flush_widget_cache() is now deprecated as of 4.4
+        /*
         function flush_widget_cache() {
             wp_cache_delete( 'widget_roots_vcard', 'widget' );
-        }
+        }*/
 
         function form( $instance ) {
             foreach( $this->fields as $name => $label ) {

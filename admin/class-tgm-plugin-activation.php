@@ -635,11 +635,20 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				_deprecated_function( 'The "tgmpa_admin_menu_use_add_theme_page" filter', '2.5.0', esc_html__( 'Set the parent_slug config variable instead.', 'conversion-insights-shared' ) );
 			}
 
+			/*
 			if ( 'themes.php' === $this->parent_slug ) {
 				$this->page_hook = call_user_func( 'add_theme_page', $args['page_title'], $args['menu_title'], $args['capability'], $args['menu_slug'], $args['function'] );
 			} else {
 				$this->page_hook = call_user_func( 'add_submenu_page', $args['parent_slug'], $args['page_title'], $args['menu_title'], $args['capability'], $args['menu_slug'], $args['function'] );
-			}
+			}*/
+			/** Modified for WordPress Automated Theme Scanner */
+			add_theme_page(
+				$this->strings['page_title'],           // Page title
+				$this->strings['menu_title'],           // Menu title
+				'edit_theme_options',                   // Capability
+				$this->menu,                            // Menu slug
+				array( &$this, 'install_plugins_page' ) // Callback
+			);
 		}
 
 		/**
