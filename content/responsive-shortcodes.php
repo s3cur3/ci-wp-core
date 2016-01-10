@@ -35,7 +35,8 @@ if(!function_exists('ciAddVisibilityBlockShortcode')) {
     }
 }
 
-add_shortcode('visibleatsize', 'ciAddVisibilityBlockShortcode');
+// WP.org doesn't allow shortcodes
+//add_shortcode('visibleatsize', 'ciAddVisibilityBlockShortcode');
 
 
 
@@ -52,6 +53,7 @@ if(!function_exists('ciAddHiddenBlockShortcode')) {
     }
 }
 
-add_shortcode('hiddenatsize', 'ciAddHiddenBlockShortcode');
+// WP.org doesn't allow shortcodes
+//add_shortcode('hiddenatsize', 'ciAddHiddenBlockShortcode');
 
 

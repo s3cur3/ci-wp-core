@@ -113,11 +113,14 @@ function roots_gallery($attr) {
 
   return $output;
 }
+// WP.org doesn't allow shortcodes
+/*
 if (current_theme_supports('bootstrap-gallery')) {
   remove_shortcode('gallery');
   add_shortcode('gallery', 'roots_gallery');
   add_filter('use_default_gallery_style', '__return_null');
 }
+*/
 
 /**
  * Add class="thumbnail img-thumbnail" to attachment items

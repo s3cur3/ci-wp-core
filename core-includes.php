@@ -3,7 +3,7 @@
 require_once 'theme/constants.php';
 require_once 'utils.php'; // Misc utility functions
 require_once 'meta-box/meta-box.php'; // "Plugin" for page/post meta boxes
-require_once 'theme/theme-updates/theme-update-checker.php'; // load the theme update checker
+//require_once 'theme/theme-updates/theme-update-checker.php'; // load the theme update checker
 
 // PAGE SETUP
 require_once 'theme/init.php'; // Roots initial theme setup and constants
