@@ -2,6 +2,7 @@
 
 require_once 'theme/constants.php';
 require_once 'utils.php'; // Misc utility functions
+require_once 'appearance/customization-utils.php'; // Tools for working with WP Customize
 require_once 'meta-box/meta-box.php'; // "Plugin" for page/post meta boxes
 require_once 'theme/theme-updates/theme-update-checker.php'; // load the theme update checker
 
