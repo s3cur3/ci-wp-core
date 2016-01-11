@@ -40,7 +40,7 @@ function roots_gallery($attr) {
     'itemtag'    => '',
     'icontag'    => '',
     'captiontag' => '',
-    'columns'    => 4,
+    'columns'    => 3,
     'size'       => 'thumbnail',
     'include'    => '',
     'exclude'    => '',
