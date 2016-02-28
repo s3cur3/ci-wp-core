@@ -35,7 +35,7 @@ if(!function_exists('ciAddVisibilityBlockShortcode')) {
     }
 }
 
-add_shortcode('visibleatsize', 'ciAddVisibilityBlockShortcode');
+ciAddShortcode('visibleatsize', 'ciAddVisibilityBlockShortcode');
 
 
 
@@ -52,6 +52,6 @@ if(!function_exists('ciAddHiddenBlockShortcode')) {
     }
 }
 
-add_shortcode('hiddenatsize', 'ciAddHiddenBlockShortcode');
+ciAddShortcode('hiddenatsize', 'ciAddHiddenBlockShortcode');
 
 

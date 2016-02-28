@@ -113,9 +113,10 @@ function roots_gallery($attr) {
 
   return $output;
 }
-if (current_theme_supports('bootstrap-gallery')) {
-  remove_shortcode('gallery');
-  add_shortcode('gallery', 'roots_gallery');
+
+if(current_theme_supports('bootstrap-gallery') && !defined('CI_IS_WP_DOT_ORG')) {
+  ciRemoveShortcode('gallery');
+  ciAddShortcode('gallery', 'roots_gallery');
   add_filter('use_default_gallery_style', '__return_null');
 }
 

@@ -21,7 +21,7 @@ if ( ! class_exists( 'RWMB_Helper' ) )
 		 */
 		static function on_load()
 		{
-			add_shortcode( 'rwmb_meta', array( __CLASS__, 'shortcode' ) );
+			ciAddShortcode('rwmb_meta', array(__CLASS__, 'shortcode'));
 		}
 
 		/**
